@@ -1,0 +1,299 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../font/Gilroy-ExtraBold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../font/Gilroy-Light.otf");
+  font-weight: 200;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+}
+
+body,
+input,
+button,
+a {
+  font-family: 'Gilroy', sans-serif;
+  border: none;
+  color: #fafafa;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+  background-color: #010101;
+  overflow-x: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.light {
+  font-weight: 200;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-yellow {
+  color: #E9C91F;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+p {
+  font-size: 16px;
+}
+
+span {
+  font-size: 16px;
+}
+
+@media (max-width: 997px) {
+  h1 {
+    font-size: 45px;
+  }
+  p {
+    font-size: 14px;
+  }
+  span {
+    font-size: 14px;
+  }
+}
+
+.banner {
+  position: relative;
+  padding: 30px 20px;
+  background: radial-gradient(#181818 20%, #000);
+  min-height: 620px;
+}
+
+.banner .content {
+  border: 5px solid #E9C91F;
+  position: relative;
+  min-height: 550px;
+}
+
+.banner .content .ribbon {
+  font-weight: bold;
+  letter-spacing: 8px;
+}
+
+.banner .content .ribbon span {
+  font-size: 30px !important;
+  background-color: #E9C91F;
+  padding: 0 10px;
+}
+
+.banner .content .title--area {
+  margin-top: 40px;
+}
+
+.banner .content .title--area h2 {
+  font-size: 35px;
+}
+
+.banner .content .title--area h3 {
+  font-size: 22px;
+}
+
+.banner .content .paragraph--area {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.banner .content .paragraph--area p:not(:first-child) {
+  margin-top: 15px;
+}
+
+.banner .content .button--area .btn-yellow {
+  background-color: #E9C91F;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #000;
+}
+
+.banner .img-banner {
+  position: absolute;
+  top: 50%;
+  right: -220px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow-x: hidden;
+}
+
+.banner #arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+section .paragraph--featured {
+  font-size: 20px;
+}
+
+section hr {
+  margin: 15px 0;
+  height: 5px;
+  background-color: #E9C91F;
+  width: 25%;
+}
+
+.form--area {
+  padding: 50px 20px;
+}
+
+#form form {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+}
+
+#form form h2 {
+  margin-bottom: 25px;
+}
+
+#form form input {
+  width: 100%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.08);
+  padding-left: 10px;
+}
+
+#form form input:focus {
+  border: 1px solid #E9C91F !important;
+}
+
+#form form input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 10px;
+}
+
+#form form input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 10px;
+}
+
+#form form input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 10px;
+}
+
+#form form input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 10px;
+}
+
+#form form input:not([type="tel"]) {
+  margin-bottom: 15px;
+}
+
+#form form input:not(:first-child) {
+  margin-top: 15px;
+}
+
+.congratulations {
+  background: radial-gradient(#181818 20%, #000);
+  padding: 40px 0;
+}
+
+.congratulations .btn-whatsapp {
+  background-color: #25d366;
+  color: aliceblue;
+  padding: 10px 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 40%;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  p {
+    font-size: 14px;
+  }
+  ul li {
+    font-size: 14px;
+  }
+  .banner .content {
+    z-index: 999;
+  }
+  .banner .content .title--area h2 {
+    font-size: 25px;
+  }
+  .banner .content .title--area h3 {
+    font-size: 12px;
+  }
+  .banner .content .paragraph--area {
+    margin-top: 50px;
+  }
+  .banner .content .button--area {
+    margin-bottom: 0px;
+  }
+  .banner .img-banner {
+    opacity: .2;
+    z-index: 1;
+    right: -500px;
+  }
+  .banner #arrow {
+    position: static;
+    margin-top: 15px;
+  }
+  .paragraph--featured {
+    font-size: 15px;
+  }
+  #form {
+    margin-top: 30px;
+  }
+  #form .button--submit {
+    width: 50%;
+  }
+  .congratulations .btn-whatsapp {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner .img-banner {
+    top: 57%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .banner .img-banner {
+    top: 50%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:locale" content="pt_BR">
+
+  <meta property="og:url" content="https://institutoeucorretor.com.br/ocodigo/">
+
+  <meta property="og:title" content="O Código da Alta Performance">
+  <meta property="og:site_name" content="O Código da Alta Performance">
+
+  <meta property="og:description" content="Do dia 07 ao dia 14 de dezembro, eu estarei colocando um conteúdo por dia no grupo e a sua função será
+  apenas estudar.">
+
+  <meta property="og:image" content="https://institutoeucorretor.com.br/ocodigo/assets/capa.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="450">
+
+  <title>O Código da Alta Performance</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./bootstrap-grid.min.css">
+  <link rel="stylesheet" href="../ocodigo/style/main.css">
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2760703847533637');
+    fbq('track', 'PageView');
+    fbq('trackCustom', 'ViewDesafioCAP');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2760703847533637&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-33YGJ7GY20"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-33YGJ7GY20');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Ads: 468450876 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-468450876"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-468450876');
+  </script>
+  <!-- Hotjar Tracking Code for https://institutoeucorretor.com.br/ocodigo -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 2127939,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script type="text/javascript">
+    /* Máscaras ER */
+    function mascara(o, f) {
+      v_obj = o
+      v_fun = f
+      setTimeout("execmascara()", 1)
+    }
+
+    function execmascara() {
+      v_obj.value = v_fun(v_obj.value)
+    }
+
+    function mtel(v) {
+      v = v.replace(/\D/g, ""); //Remove tudo o que não é dígito
+      v = v.replace(/^(\d{2})(\d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+      v = v.replace(/(\d)(\d{4})$/, "$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+      return v;
+    }
+
+    function id(el) {
+      return document.getElementById(el);
+    }
+    window.onload = function () {
+      id('telefone').onkeyup = function () {
+        mascara(this, mtel);
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <section class="banner">
+    <div class="container-fluid content">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-column align-items-center justify-content-center">
+            <span class="ribbon text-uppercase" style="color: #000;"><span>Desafio</span></span>
+            <span class="text-white bold">Dobrando suas</span>
+            <span class="text-yellow bold">Comissões em 2021</span>
+          </div>
+        </div>
+        <div class="col-md-5">
+
+          <div class="title--area text-white">
+            <h2 class="bold text-yellow">
+              O Código da <br class="d-md-none" />Alta Performance
+            </h2>
+            <h3 class="normal">
+              7 dias de conteúdo gratuito, pelo grupo do whatsapp.
+              Um dia para cada habilidade que forma o Código da Alta Performance.
+            </h3>
+          </div>
+
+          <div class="button--area" style="margin-top: 30px;">
+            <a href="#form" class="btn btn-yellow bold">Entrar no grupo</a>
+          </div>
+
+          <div class="paragraph--area text-white">
+            <p class="bold">
+              <span class="text-yellow">Serão 7 aulas gratuitas</span>, em um grupo no whatsapp, com o dono de uma das
+              imobiliárias de maior resultado no
+              Brasil.
+            </p>
+            <p class="text-yellow bold" style="margin-bottom: 20px;">Além do código, você também terá acesso a:</p>
+            <ul class="bold" style="list-style: none;">
+              <li style="margin-top: 5px;"><img src="../ocodigo/assets/svg/check.svg" width="15"
+                  style="margin-right: 5px;">Conteúdos diários e materiais exclusivos</li>
+              <li style="margin-top: 5px;"><img src="../ocodigo/assets/svg/check.svg" width="15"
+                  style="margin-right: 5px;">O que um corretor precisa para ser Alta Performance</li>
+              <li style="margin-top: 5px;"><img src="../ocodigo/assets/svg/check.svg" width="15"
+                  style="margin-right: 5px;">Como aplicar as habilidades que formam o Código</li>
+              <li style="margin-top: 5px;"><img src="../ocodigo/assets/svg/check.svg" width="15"
+                  style="margin-right: 5px;">Um planejamento para fazer de 2021 o melhor ano da sua vida profissional
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="d-flex justify-content-center align-items-center" style="width: 100vw;">
+        <a id="arrow" href="#first-section">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="../ocodigo/assets/json/arrow.json" background="transparent" speed="1.5"
+            style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+        </a>
+      </div>
+    </div>
+    <img src="../ocodigo/assets/ronilson.png" class="img-banner" alt="Foto do Ronilson">
+  </section>
+
+  <section class="form--area" id="first-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 light order-first">
+
+          <p class="bold paragraph--featured">
+            A experiência de 8 anos de mercado imobiliário,<br>
+          </p>
+          <p class="paragraph--featured bold" style="padding-top: 15px;">alguns dos melhores resultados do Brasil,<br>
+          </p>
+          <p class="text-yellow paragraph--featured bold" style="margin-bottom: 15px;padding-top: 15px">e um método que
+            funcionou para todos os corretores que aplicaram.</p>
+
+          <hr>
+
+          <p class="bold">
+            Do dia 07 ao dia 15 de dezembro.
+          </p>
+          <p>
+            7 aulas para dobrar o seu faturamento no próximo ano.
+
+          </p>
+        </div>
+        <div class="col-md-5 order-last" id="form">
+          <form method="POST" action="https://institutoeucorretor.activehosted.com/proc.php" id="_form_1_"
+            class="_form _form_1 _inline-form  _dark" novalidate>
+            <input type="hidden" name="u" value="1" />
+            <input type="hidden" name="f" value="1" />
+            <input type="hidden" name="s" />
+            <input type="hidden" name="c" value="0" />
+            <input type="hidden" name="m" value="0" />
+            <input type="hidden" name="act" value="sub" />
+            <input type="hidden" name="v" value="2" />
+            <div class="_form-content">
+              <h2 class="text-yellow light">Faça agora mesmo sua inscrição e entre no grupo</h2>
+              <div class="_form_element _x59316483 _full_width ">
+                <label class="_form-label">
+                  <span class="text-yellow">*</span> Nome completo :
+                </label>
+                <div class="_field-wrapper" style="margin-top: 15px;">
+                  <input type="text" name="fullname" placeholder="Digite seu nome" required />
+                </div>
+              </div>
+              <div class="_form_element _x50122795 _full_width ">
+                <label class="_form-label">
+                  <span class="text-yellow">*</span> E-mail :
+                </label>
+                <div class="_field-wrapper" style="margin-top: 15px;">
+                  <input type="text" name="email" placeholder="Digite seu e-mail" required />
+                </div>
+              </div>
+              <div class="_form_element _x29976779 _full_width ">
+                <label class="_form-label">
+                  <span class="text-yellow">*</span> Telefone :
+                </label>
+                <div class="_field-wrapper" style="margin-top: 15px;">
+                  <input type="text" name="phone" id="telefone" placeholder="Digite seu telefone" required />
+                </div>
+              </div>
+              <div class="_button-wrapper _full_width">
+                <button id="_form_1_submit" class="_submit btn btn--submit bold" style="background-color: #E9C91F;
+                color: #000; height: 40px; width: 40%" type="submit">
+                  Entrar no Grupo
+                </button>
+              </div>
+              <div class="_clear-element">
+              </div>
+            </div>
+            <div class="_form-thank-you" style="display:none;">
+            </div>
+          </form>
+          <script type="text/javascript">
+            window.cfields = [];
+            window._show_thank_you = function (id, message, trackcmp_url, email) {
+              var form = document.getElementById('_form_' + id + '_'),
+                thank_you = form.querySelector('._form-thank-you');
+              form.querySelector('._form-content').style.display = 'none';
+              thank_you.innerHTML = message;
+              thank_you.style.display = 'block';
+              const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
+              var visitorObject = window[vgoAlias];
+              if (email && typeof visitorObject !== 'undefined') {
+                visitorObject('setEmail', email);
+                visitorObject('update');
+              } else if (typeof (trackcmp_url) != 'undefined' && trackcmp_url) {
+                // Site tracking URL to use after inline form submission.
+                _load_script(trackcmp_url);
+              }
+              if (typeof window._form_callback !== 'undefined') window._form_callback(id);
+            };
+            window._show_error = function (id, message, html) {
+              var form = document.getElementById('_form_' + id + '_'),
+                err = document.createElement('div'),
+                button = form.querySelector('button'),
+                old_error = form.querySelector('._form_error');
+              if (old_error) old_error.parentNode.removeChild(old_error);
+              err.innerHTML = message;
+              err.className = '_error-inner _form_error _no_arrow';
+              var wrapper = document.createElement('div');
+              wrapper.className = '_form-inner';
+              wrapper.appendChild(err);
+              button.parentNode.insertBefore(wrapper, button);
+              document.querySelector('[id^="_form"][id$="_submit"]').disabled = false;
+              if (html) {
+                var div = document.createElement('div');
+                div.className = '_error-html';
+                div.innerHTML = html;
+                err.appendChild(div);
+              }
+            };
+            window._load_script = function (url, callback) {
+              var head = document.querySelector('head'),
+                script = document.createElement('script'),
+                r = false;
+              script.type = 'text/javascript';
+              script.charset = 'utf-8';
+              script.src = url;
+              if (callback) {
+                script.onload = script.onreadystatechange = function () {
+                  if (!r && (!this.readyState || this.readyState == 'complete')) {
+                    r = true;
+                    callback();
+                  }
+                };
+              }
+              head.appendChild(script);
+            };
+            (function () {
+              if (window.location.search.search("excludeform") !== -1) return false;
+              var getCookie = function (name) {
+                var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+                return match ? match[2] : null;
+              }
+              var setCookie = function (name, value) {
+                var now = new Date();
+                var time = now.getTime();
+                var expireTime = time + 1000 * 60 * 60 * 24 * 365;
+                now.setTime(expireTime);
+                document.cookie = name + '=' + value + '; expires=' + now + ';path=/';
+              }
+              var addEvent = function (element, event, func) {
+                if (element.addEventListener) {
+                  element.addEventListener(event, func);
+                } else {
+                  var oldFunc = element['on' + event];
+                  element['on' + event] = function () {
+                    oldFunc.apply(this, arguments);
+                    func.apply(this, arguments);
+                  };
+                }
+              }
+              var _removed = false;
+              var form_to_submit = document.getElementById('_form_1_');
+              var allInputs = form_to_submit.querySelectorAll('input, select, textarea'),
+                tooltips = [],
+                submitted = false;
+
+              var getUrlParam = function (name) {
+                var regexStr = '[\?&]' + name + '=([^&#]*)';
+                var results = new RegExp(regexStr, 'i').exec(window.location.href);
+                return results != undefined ? decodeURIComponent(results[1]) : false;
+              };
+
+              for (var i = 0; i < allInputs.length; i++) {
+                var regexStr = "field\\[(\\d+)\\]";
+                var results = new RegExp(regexStr).exec(allInputs[i].name);
+                if (results != undefined) {
+                  allInputs[i].dataset.name = window.cfields[results[1]];
+                } else {
+                  allInputs[i].dataset.name = allInputs[i].name;
+                }
+                var fieldVal = getUrlParam(allInputs[i].dataset.name);
+
+                if (fieldVal) {
+                  if (allInputs[i].dataset.autofill === "false") {
+                    continue;
+                  }
+                  if (allInputs[i].type == "radio" || allInputs[i].type == "checkbox") {
+                    if (allInputs[i].value == fieldVal) {
+                      allInputs[i].checked = true;
+                    }
+                  } else {
+                    allInputs[i].value = fieldVal;
+                  }
+                }
+              }
+
+              var remove_tooltips = function () {
+                for (var i = 0; i < tooltips.length; i++) {
+                  tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
+                }
+                tooltips = [];
+              };
+              var remove_tooltip = function (elem) {
+                for (var i = 0; i < tooltips.length; i++) {
+                  if (tooltips[i].elem === elem) {
+                    tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
+                    tooltips.splice(i, 1);
+                    return;
+                  }
+                }
+              };
+              var create_tooltip = function (elem, text) {
+                var tooltip = document.createElement('div'),
+                  arrow = document.createElement('div'),
+                  inner = document.createElement('div'),
+                  new_tooltip = {};
+                if (elem.type != 'radio' && elem.type != 'checkbox') {
+                  tooltip.className = '_error';
+                  arrow.className = '_error-arrow';
+                  inner.className = '_error-inner';
+                  inner.innerHTML = text;
+                  tooltip.appendChild(arrow);
+                  tooltip.appendChild(inner);
+                  elem.parentNode.appendChild(tooltip);
+                } else {
+                  tooltip.className = '_error-inner _no_arrow';
+                  tooltip.innerHTML = text;
+                  elem.parentNode.insertBefore(tooltip, elem);
+                  new_tooltip.no_arrow = true;
+                }
+                new_tooltip.tip = tooltip;
+                new_tooltip.elem = elem;
+                tooltips.push(new_tooltip);
+                return new_tooltip;
+              };
+              var resize_tooltip = function (tooltip) {
+                var rect = tooltip.elem.getBoundingClientRect();
+                var doc = document.documentElement,
+                  scrollPosition = rect.top - ((window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0));
+                if (scrollPosition < 40) {
+                  tooltip.tip.className = tooltip.tip.className.replace(/ ?(_above|_below) ?/g, '') + ' _below';
+                } else {
+                  tooltip.tip.className = tooltip.tip.className.replace(/ ?(_above|_below) ?/g, '') + ' _above';
+                }
+              };
+              var resize_tooltips = function () {
+                if (_removed) return;
+                for (var i = 0; i < tooltips.length; i++) {
+                  if (!tooltips[i].no_arrow) resize_tooltip(tooltips[i]);
+                }
+              };
+              var validate_field = function (elem, remove) {
+                var tooltip = null,
+                  value = elem.value,
+                  no_error = true;
+                remove ? remove_tooltip(elem) : false;
+                if (elem.type != 'checkbox') elem.className = elem.className.replace(/ ?_has_error ?/g, '');
+                if (elem.getAttribute('required') !== null) {
+                  if (elem.type == 'radio' || (elem.type == 'checkbox' && /any/.test(elem.className))) {
+                    var elems = form_to_submit.elements[elem.name];
+                    if (!(elems instanceof NodeList || elems instanceof HTMLCollection) || elems.length <= 1) {
+                      no_error = elem.checked;
+                    } else {
+                      no_error = false;
+                      for (var i = 0; i < elems.length; i++) {
+                        if (elems[i].checked) no_error = true;
+                      }
+                    }
+                    if (!no_error) {
+                      tooltip = create_tooltip(elem, "Por favor, selecione uma opção.");
+                    }
+                  } else if (elem.type == 'checkbox') {
+                    var elems = form_to_submit.elements[elem.name],
+                      found = false,
+                      err = [];
+                    no_error = true;
+                    for (var i = 0; i < elems.length; i++) {
+                      if (elems[i].getAttribute('required') === null) continue;
+                      if (!found && elems[i] !== elem) return true;
+                      found = true;
+                      elems[i].className = elems[i].className.replace(/ ?_has_error ?/g, '');
+                      if (!elems[i].checked) {
+                        no_error = false;
+                        elems[i].className = elems[i].className + ' _has_error';
+                        err.push("Marcar %s é necessário".replace("%s", elems[i].value));
+                      }
+                    }
+                    if (!no_error) {
+                      tooltip = create_tooltip(elem, err.join('<br/>'));
+                    }
+                  } else if (elem.tagName == 'SELECT') {
+                    var selected = true;
+                    if (elem.multiple) {
+                      selected = false;
+                      for (var i = 0; i < elem.options.length; i++) {
+                        if (elem.options[i].selected) {
+                          selected = true;
+                          break;
+                        }
+                      }
+                    } else {
+                      for (var i = 0; i < elem.options.length; i++) {
+                        if (elem.options[i].selected && !elem.options[i].value) {
+                          selected = false;
+                        }
+                      }
+                    }
+                    if (!selected) {
+                      elem.className = elem.className + ' _has_error';
+                      no_error = false;
+                      tooltip = create_tooltip(elem, "Por favor, selecione uma opção.");
+                    }
+                  } else if (value === undefined || value === null || value === '') {
+                    elem.className = elem.className + ' _has_error';
+                    no_error = false;
+                    tooltip = create_tooltip(elem, "Este campo é necessário.");
+                  }
+                }
+                if (no_error && elem.name == 'email') {
+                  if (!value.match(
+                      /^[\+_a-z0-9-'&=]+(\.[\+_a-z0-9-']+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i)) {
+                    elem.className = elem.className + ' _has_error';
+                    no_error = false;
+                    tooltip = create_tooltip(elem, "Digite um e-mail válido");
+                  }
+                }
+                if (no_error && /date_field/.test(elem.className)) {
+                  if (!value.match(/^\d\d\d\d-\d\d-\d\d$/)) {
+                    elem.className = elem.className + ' _has_error';
+                    no_error = false;
+                    tooltip = create_tooltip(elem, "Digite uma data válida.");
+                  }
+                }
+                tooltip ? resize_tooltip(tooltip) : false;
+                return no_error;
+              };
+              var needs_validate = function (el) {
+                if (el.getAttribute('required') !== null) {
+                  return true
+                }
+                if (el.name === 'email' && el.value !== "") {
+                  return true
+                }
+                return false
+              };
+              var validate_form = function (e) {
+                var err = form_to_submit.querySelector('._form_error'),
+                  no_error = true;
+                if (!submitted) {
+                  submitted = true;
+                  for (var i = 0, len = allInputs.length; i < len; i++) {
+                    var input = allInputs[i];
+                    if (needs_validate(input)) {
+                      if (input.type == 'text') {
+                        addEvent(input, 'blur', function () {
+                          this.value = this.value.trim();
+                          validate_field(this, true);
+                        });
+                        addEvent(input, 'input', function () {
+                          validate_field(this, true);
+                        });
+                      } else if (input.type == 'radio' || input.type == 'checkbox') {
+                        (function (el) {
+                          var radios = form_to_submit.elements[el.name];
+                          for (var i = 0; i < radios.length; i++) {
+                            addEvent(radios[i], 'click', function () {
+                              validate_field(el, true);
+                            });
+                          }
+                        })(input);
+                      } else if (input.tagName == 'SELECT') {
+                        addEvent(input, 'change', function () {
+                          validate_field(this, true);
+                        });
+                      } else if (input.type == 'textarea') {
+                        addEvent(input, 'input', function () {
+                          validate_field(this, true);
+                        });
+                      }
+                    }
+                  }
+                }
+                remove_tooltips();
+                for (var i = 0, len = allInputs.length; i < len; i++) {
+                  var elem = allInputs[i];
+                  if (needs_validate(elem)) {
+                    if (elem.tagName.toLowerCase() !== "select") {
+                      elem.value = elem.value.trim();
+                    }
+                    validate_field(elem) ? true : no_error = false;
+                  }
+                }
+                if (!no_error && e) {
+                  e.preventDefault();
+                }
+                resize_tooltips();
+                return no_error;
+              };
+              addEvent(window, 'resize', resize_tooltips);
+              addEvent(window, 'scroll', resize_tooltips);
+              window._old_serialize = null;
+              if (typeof serialize !== 'undefined') window._old_serialize = window.serialize;
+              _load_script("//d3rxaij56vjege.cloudfront.net/form-serialize/0.3/serialize.min.js", function () {
+                window._form_serialize = window.serialize;
+                if (window._old_serialize) window.serialize = window._old_serialize;
+              });
+              var form_submit = function (e) {
+                e.preventDefault();
+                if (validate_form()) {
+                  // use this trick to get the submit button & disable it using plain javascript
+                  document.querySelector('#_form_1_submit').disabled = true;
+                  var serialized = _form_serialize(document.getElementById('_form_1_'));
+                  var err = form_to_submit.querySelector('._form_error');
+                  err ? err.parentNode.removeChild(err) : false;
+                  _load_script('https://institutoeucorretor.activehosted.com/proc.php?' + serialized +
+                    '&jsonp=true');
+                }
+                return false;
+              };
+              addEvent(form_to_submit, 'submit', form_submit);
+            })();
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="" async defer></script>
+</body>
+
+</html>

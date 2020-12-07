@@ -1,0 +1,115 @@
+body, html{
+  overflow-x: hidden;
+  background-color: rgb(29, 28, 28);
+  scroll-behavior: smooth;
+}
+.banner{
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 80vh;
+  background-image: linear-gradient(75deg ,#1d1c1c 20%, transparent) , url("./assets/bg.png");
+  background-position: top right;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.btn-play{
+  background-color: #f6f6f6;
+  color: #1d1c1c;
+
+}
+.btn-conheca{
+  border: 1px solid #E9C91F;
+  color: #E9C91F;
+  opacity: 0.8;
+}
+.btn-conheca:hover{
+  background:#E9C91F;
+  color: #1d1c1c;
+  opacity: 0.8;
+}
+
+.text-yellow{
+  color: #E9C91F
+}
+
+
+/* Lista de Aulas  */
+.list {
+  transition: all ease 0.2s;
+  margin-left: 30px;
+}
+.listarea{
+  transition: all ease 0.4s;
+}
+.rowAulas:not(:first-child){
+  margin-top: 50px;
+}
+.rowAulas h2{ 
+  margin-left: 40px;
+}
+.rowAulas p{ 
+  margin-left: 40px;
+}
+
+.item {
+  display: inline-block;
+  width: 250px;
+  cursor: pointer;
+}
+
+.item img {
+  width: 100%;
+  transform: scale(0.9);
+  transition: all ease 0.2s;
+  border-radius: 20px
+}
+
+
+.item img:hover {
+  transform: scale(1);
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  width: 40px;
+  height: 444px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #0ada;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transition: all ease 0.2s;
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+.rowAulas:hover .arrow-left,
+.rowAulas:hover .arrow-right {
+  opacity: 1;
+}
+
+
+@media (max-width: 760px) {
+  .banner{
+    background-position: left;
+  }
+  .btn{
+    width: 60%;
+  }
+  .arrow-left,
+  .arrow-right {
+    opacity: 1;
+  }
+}

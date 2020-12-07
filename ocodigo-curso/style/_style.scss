@@ -1,0 +1,45 @@
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.bold{
+  font-weight: bold;
+}
+.normal{
+  font-weight: normal;
+}
+.light{
+  font-weight: 200;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+.text-yellow{
+  color: #E9C91F;
+}
+h1{
+  font-size: 5em;
+}
+p{
+  font-size: 16px;
+}
+span{
+  font-size: 16px;
+}
+
+@media (max-width: 997px){
+  h1{
+    font-size: 45px;
+  }
+  p{
+    font-size: 14px;
+  }
+  span{
+    font-size: 14px
+  }
+}

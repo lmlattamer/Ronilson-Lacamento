@@ -1,0 +1,51 @@
+.msg-error {
+  opacity: 0;
+  height: 0;
+  transform: translateY(100px);
+  transition: all .5s;
+
+  &.active {
+    opacity: 1;
+    height: inherit;
+    transform: translateY(0);
+  }
+}
+
+.text-yellow {
+  color: #E9C91F
+}
+
+.btn-yellow {
+  background-color: #E9C91F !important;
+  color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.text-black {
+  color: #080c0f
+}
+
+.bg-black {
+  background: #181818
+}
+
+.bg-img-black {
+  background: radial-gradient(#363636, #080c0f), url('../assets/01.png');
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.btn-shadow {
+  box-shadow: -2px 0 3px rgba(0, 0, 0, .4);
+}
+
+@import './_breakPoints.scss';
+
+@media (max-width: 768px) {
+  .btn-yellow{
+    position: relative;
+    margin-top: 20px;
+  }
+}

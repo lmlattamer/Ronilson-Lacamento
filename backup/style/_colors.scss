@@ -1,0 +1,37 @@
+/*----- Text Colors */
+.text-red{
+  color: $red;
+}
+.text-blue{
+  color: $blue;
+}
+.text-darkblue{
+  color: $darkblue;
+}
+.text-white{
+  color: $white;
+}
+/*----- Backgounds */
+.bg-red{
+  background: $red;
+}
+.bg-blue{
+  background: $blue;
+}
+.bg-darkblue{
+  background: $darkblue !important;
+}
+.bg-white{
+  background: url('../assets/sandpaper.png');
+}
+/*----- Buttons */
+.btn-red{
+  background: $red;
+  border-radius: 150px;
+  color: $white;
+
+  &:hover{
+    background: $darkred;
+    color: $white;
+  }
+}
